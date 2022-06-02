@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 100%; 
+    background: #333;
+    min-height: 111px ;   
+}
+main {
+    width: 100%;
+    flex-grow: 1;
+}
+footer {
+    width: 100%;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.link {
+    background: url('../img/fon.png'), #333333;
+    min-height: 478px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: wrap;    
+}
+
+.cards_item {
+    margin-top: 55px;
+    margin-bottom: 55px;
+    text-align: center;
+    padding: 25px;
+}
+.card_name {
+    margin-top: 15px;
+    font-family: 'Gilroy';      
+    font-size: 16px;
+    line-height: 150%;
+    color: #333333;
+}
+.card_brend {
+    margin-top: 15px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    color: #333333;    
+}
+
+.card_btn {
+    margin-top: 15px;
+    width: 125px;
+    background: #333333;
+    padding: 10px 0;
+    border: 1px solid #FFFFFF;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 21px;    
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.card_btn:hover, .card_btn:active {
+    background: #575757;
+}
+
+
+@media (max-width:1000px) {
+    .cards_item img {
+        width: 350px;
+    }
+    .cards {
+        justify-content: center;
+    }
+}
+
+.about {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+.about_img {
+    width: 800px;
+    margin-left: 50px;
+}
+
+@media (max-width:800px) {
+    .about {
+        flex-direction: row-reverse;
+    }
+    .about_img{
+        margin-left: 0;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:600px) {
+    .about {
+        flex-direction: column;
+    }
+    .about_img{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+@media (max-width: 500px){
+    .about_img{
+        display: none;
+    }
+    .about h2 {
+        font-size: 60px;
+        text-align: center;
+    }
+}
